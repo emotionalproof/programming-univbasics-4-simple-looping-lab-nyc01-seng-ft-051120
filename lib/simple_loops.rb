@@ -25,9 +25,34 @@ def output_array(array)
 
   while array.length > count
     puts array[count]
+
+    count += 1
   end
 end
 
+#def return_string_array(array)
+#  array.map { |el| el.to_s }
+#end
+
+#def return_string_array(array)
+#  count = 0
+#  string_array = []
+#
+#  while array.length > count
+#    string_array << array[count].to_s
+#
+#    count += 1
+#  end
+#  string_array
+#end
+
 def return_string_array(array)
-  array.map { |el| el.to_s }
+  count = 0
+
+  while count < array.length
+    array[count] = array[count].to_s
+
+    count += 1
+  end
+  array
 end
