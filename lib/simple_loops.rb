@@ -30,6 +30,15 @@ def output_array(array)
   end
 end
 
+#def return_string_array(array)
+#  array.map { |el| el.to_s }
+#end
+
 def return_string_array(array)
-  array.map { |el| el.to_s }
+  count = 0
+  string_array = []
+
+  while array.length > count
+    string_array << array[count].to_s
+  end
 end
