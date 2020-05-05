@@ -25,6 +25,8 @@ def output_array(array)
 
   while array.length > count
     puts array[count]
+
+    count += 1
   end
 end
 
