@@ -43,4 +43,5 @@ def return_string_array(array)
 
     count += 1
   end
+  string_array
 end
